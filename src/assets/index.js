@@ -22,6 +22,8 @@ import link from "./link.png";
 import meta from "./meta.png";
 
 import Logo from "./logo.png";
+import Backend from "./backend.png";
+import Frontend from "./frontend.png";
 
 export {
   Logo,
@@ -44,4 +46,6 @@ export {
   github,
   link,
   meta,
+  Backend,
+  Frontend,
 };

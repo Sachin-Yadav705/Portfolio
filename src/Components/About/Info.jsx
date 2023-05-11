@@ -1,6 +1,5 @@
 import React from "react";
-import Frontend from "../../assets/frontend.png";
-import Backend from "../../assets/Backend.png";
+import { Frontend, Backend } from "../../assets";
 
 import Web from "../../assets/web.png";
 
