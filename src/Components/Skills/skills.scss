@@ -1,0 +1,31 @@
+.skills__container {
+  gap: 0 !important;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.section__subtitle {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.skills__area {
+  padding: 5.5rem;
+  .skills__ball {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 80px;
+
+    .skills__size {
+      height: 110px;
+      width: 110px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+}

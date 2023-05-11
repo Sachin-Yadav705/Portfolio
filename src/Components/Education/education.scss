@@ -1,0 +1,117 @@
+.section__title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.section__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #827e9b;
+}
+.qualification__sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+.qualification__data {
+  display: grid;
+  grid-template-columns: 3fr 0.8fr 3fr;
+  // column-gap: 1.5rem;
+
+  .qualification__data__container {
+    background: #151030;
+    padding: 20px, 10px;
+  }
+}
+.qualification__title {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.qualification__subtitle {
+  display: inline-block;
+  font-size: 0.8rem;
+  // margin-bottom: 1rem;
+}
+.qualification__calendar {
+  font-size: 0.95rem;
+  .qualification__calendar__icon {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+}
+.qualification__rounder {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+
+  .certificate {
+    color: #804dee;
+    font-size: 1.6rem;
+    z-index: 1;
+  }
+}
+.qualification__line {
+  display: block;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+  transform: translate(23px, -24px);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .qualification__container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .qualification__container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .qualification__sections {
+    grid-template-columns: initial;
+  }
+  .qualification__button {
+    margin: 0 var(--mb-0-75);
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .qualification__data {
+    gap: 0.5rem;
+  }
+}
+
+.education__icon {
+  height: 100%;
+  width: 100%;
+}
+.education__img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+.education__title {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.education__company {
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: 400;
+}
+.education__date {
+  font-size: 12px;
+}

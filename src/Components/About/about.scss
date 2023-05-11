@@ -1,0 +1,126 @@
+.about__head {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.about__subhead {
+  // text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+  span {
+    color: var(--secondary-color);
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+.about__data {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  //   gap: 6rem;
+
+  .about__img {
+    height: 500px;
+    border-radius: 1.5rem;
+
+    @media screen and (max-width: 768px) {
+      height: 400px;
+    }
+  }
+
+  .about__description {
+    font-size: 1.1rem;
+    @media screen and (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  .about__info {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+  }
+
+  .about__box {
+    background: linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+    background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    // background: linear-gradient(315deg, #03a9f4, #ff0058);
+    // background: linear-gradient(124deg, #8bc5de, #979591);
+    border-radius: 20px;
+    height: 210px;
+    width: 170px;
+    position: relative;
+    // padding: 5px;
+
+    .about__inner {
+      background: #151030;
+      overflow: visible;
+      border-radius: 20px;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+
+      .about__icon {
+        img {
+          height: 55px;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    ::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // background: linear-gradient(315deg, #03a9f4, #ff0058);
+      // background: linear-gradient(124deg, #8bc5de, #979591);
+      // background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+      background: linear-gradient(-90.13deg, #442086 1.9%, #520884 97.5%);
+
+      filter: blur(5px);
+      z-index: -10;
+      border-radius: 20px;
+    }
+  }
+  .about__icon {
+    font-size: 1.5rem;
+    color: var(--black-color);
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    display: flex;
+  }
+  .button {
+    background-color: #151030;
+    color: #fff;
+    padding: 1.25rem 2rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    width: 225px;
+    margin-top: 50px;
+  }
+  .download__icon {
+    font-size: 1.8rem;
+    margin-left: 0.8rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 2rem;
+  }
+}

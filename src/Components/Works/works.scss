@@ -1,0 +1,94 @@
+.work__head {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+// .work__subhead {
+//   font-size: 18px;
+//   color: #827e9b;
+//   text-align: center;
+// }
+.w_full {
+  width: 100%;
+  display: flex;
+
+  .work__description {
+    color: #827e9b;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 48rem;
+  }
+}
+.work__card {
+  //   width: 360px;
+  flex-wrap: wrap;
+  display: flex;
+
+  gap: 2rem;
+
+  .single__card {
+    width: 300px;
+    // height: 390px;
+    background-color: #151030;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    .work__img {
+      width: 100%;
+      height: 250px;
+      position: relative;
+      .work__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        object-fit: cover;
+      }
+
+      .work__link {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: 0.75rem;
+        display: flex;
+        justify-content: space-between;
+
+        .link__click {
+          background: linear-gradient(to right, #434343, #000000);
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 9999px;
+          cursor: pointer;
+
+          .github__linkS {
+            height: 50%;
+            width: 50%;
+          }
+        }
+      }
+    }
+    .details {
+      margin-top: 5px;
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 14px;
+        margin-top: 0.4rem;
+        color: #827e9b;
+      }
+
+      .tags {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1rem;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
