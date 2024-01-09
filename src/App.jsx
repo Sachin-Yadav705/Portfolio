@@ -9,11 +9,13 @@ import {
   Works,
   Education,
   Contact,
+  ParticlesComponent,
 } from "./Components";
 
 function App() {
   return (
     <BrowserRouter>
+      <ParticlesComponent />
       <Navbar />
       <Hero />
       <About />
